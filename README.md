@@ -1,7 +1,6 @@
-# Solving the `HS071` Optimization Problem Using PyTorch Autograd
+# Solving the `HS071` Optimization Problem with PyTorch Autograd and Cyipopt
 
-This example demonstrates how to solve the [`HS071`](https://cyipopt.readthedocs.io/en/stable/tutorial.html) optimization problem using PyTorch's automatic differentiation capabilities. By leveraging `torch.autograd`, gradients, Jacobians, and Hessians are computed dynamically, eliminating the need for manual derivative calculations while seamlessly integrating with the `cyipopt` interface.
-
+This example shows how to solve the [`HS071`](https://cyipopt.readthedocs.io/en/stable/tutorial.html) optimization problem using the `cyipopt` interface. While `cyipopt` requires implementations for the gradient, Jacobian, and Hessian, these are dynamically computed using PyTorch's automatic differentiation tools, reducing the need for manual derivative calculations.
 
 ```python
 import cyipopt
