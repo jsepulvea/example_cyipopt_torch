@@ -1,8 +1,7 @@
-# The `HS071` example solved without computing the jacobian and hessian by hand
+# Solving the `HS071` Optimization Problem Using PyTorch Autograd
 
-The following solves the [`HS071`](https://cyipopt.readthedocs.io/en/stable/tutorial.html) 
-example implementing the cyipopt problem class interface, computing the
-gradient, jacobian, and hessian with torch autograd methods:
+This example demonstrates how to solve the [`HS071`](https://cyipopt.readthedocs.io/en/stable/tutorial.html) optimization problem using PyTorch's automatic differentiation capabilities. By leveraging `torch.autograd`, gradients, Jacobians, and Hessians are computed dynamically, eliminating the need for manual derivative calculations while seamlessly integrating with the `cyipopt` interface.
+
 
 ```python
 import cyipopt
